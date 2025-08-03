@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0f1116;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  color: orange;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.search {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 5em;
+  font-weight: 900;
+  line-height: 1;
+  color: white;
+}
+
+.hero-slider-indicator {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.2em;
+  color: #999;
+}
+
+.hero-slider-indicator .active {
+  color: white;
+}
+
+/* Tours Section */
+.tours {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.tours h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+.tour-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tour-card {
+  background: #1c1f26;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Inspire Section */
+.inspire {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 100px 50px;
+  background: linear-gradient(to top, #0f1116, #1a1d24);
+}
+
+.inspire .text {
+  flex: 1 1 300px;
+}
+
+.inspire h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.inspire button {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.inspire p {
+  max-width: 500px;
+  color: #ccc;
+}
+
+.inspire .videos {
+  flex: 1 1 300px;
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.inspire .videos img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
